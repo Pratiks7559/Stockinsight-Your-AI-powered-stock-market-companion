@@ -1,0 +1,160 @@
+.footer {
+  background-color: var(--header-bg);
+  color: white;
+  padding: 3rem 2rem 1rem;
+}
+
+.footer .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-brand h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.footer-brand p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+}
+
+.link-group h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.link-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.link-group li {
+  margin-bottom: 0.7rem;
+}
+
+.link-group a {
+  color: white;
+  opacity: 0.8;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.link-group a:hover {
+  opacity: 1;
+}
+
+.newsletter h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.newsletter p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.newsletter-form input {
+  flex-grow: 1;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.newsletter-form button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: var(--hover-color);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom p {
+  opacity: 0.8;
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.payment-methods span {
+  opacity: 0.8;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem 1rem;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .payment-methods {
+    justify-content: center;
+  }
+}

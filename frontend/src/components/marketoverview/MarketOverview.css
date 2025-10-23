@@ -1,0 +1,134 @@
+.market-overview {
+  padding: 4rem 2rem;
+  background-color: var(--bg-color);
+}
+
+.market-overview .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.market-overview h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--header-bg);
+}
+
+.indices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.index-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.index-card:hover {
+  transform: translateY(-5px);
+}
+
+.index-card h3 {
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.dark-mode .index-card h3 {
+  color: #ccc;
+}
+
+.index-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--header-bg);
+}
+
+.index-change {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.index-change.up {
+  color: #4caf50;
+}
+
+.index-change.down {
+  color: #f44336;
+}
+
+.stocks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.stock-section {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.stock-section h3 {
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--header-bg);
+}
+
+.stock-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.stock-item:last-child {
+  border-bottom: none;
+}
+
+.stock-name {
+  font-weight: 600;
+  color: var(--header-bg);
+}
+
+.stock-price, .stock-volume {
+  color: #666;
+}
+
+.dark-mode .stock-price, 
+.dark-mode .stock-volume {
+  color: #ccc;
+}
+
+.stock-change {
+  font-weight: 600;
+}
+
+.stock-change.up {
+  color: #4caf50;
+}
+
+.stock-change.down {
+  color: #f44336;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .market-overview {
+    padding: 3rem 1rem;
+  }
+  
+  .stocks-grid {
+    grid-template-columns: 1fr;
+  }
+}

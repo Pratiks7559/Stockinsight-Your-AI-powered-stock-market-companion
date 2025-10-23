@@ -1,0 +1,190 @@
+.portfolio-preview {
+  padding: 4rem 2rem;
+  background-color: var(--card-bg);
+}
+
+.portfolio-preview .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.portfolio-preview h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--header-bg);
+}
+
+.portfolio-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.summary-card {
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.summary-card h3 {
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.dark-mode .summary-card h3 {
+  color: #ccc;
+}
+
+.summary-card .value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--header-bg);
+}
+
+.summary-card .change {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.summary-card .change.up {
+  color: #4caf50;
+}
+
+.summary-card .change.down {
+  color: #f44336;
+}
+
+.holdings-section {
+  margin-bottom: 2rem;
+}
+
+.holdings-section h3 {
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--header-bg);
+}
+
+.holdings-list {
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.holding-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.holding-item:last-child {
+  border-bottom: none;
+}
+
+.stock-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stock-symbol {
+  font-weight: 600;
+  color: var(--header-bg);
+  margin-bottom: 0.3rem;
+}
+
+.stock-price {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.dark-mode .stock-price {
+  color: #ccc;
+}
+
+.stock-change {
+  font-weight: 600;
+}
+
+.stock-change.up {
+  color: #4caf50;
+}
+
+.stock-change.down {
+  color: #f44336;
+}
+
+.portfolio-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Guest Portfolio */
+.guest-portfolio {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.guest-portfolio p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.dark-mode .guest-portfolio p {
+  color: #ccc;
+}
+
+.sample-watchlist {
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sample-watchlist h3 {
+  margin-bottom: 1.2rem;
+  color: var(--header-bg);
+}
+
+.watchlist-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.watchlist-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  background-color: var(--card-bg);
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .portfolio-preview {
+    padding: 3rem 1rem;
+  }
+  
+  .portfolio-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .watchlist-items {
+    grid-template-columns: 1fr;
+  }
+}

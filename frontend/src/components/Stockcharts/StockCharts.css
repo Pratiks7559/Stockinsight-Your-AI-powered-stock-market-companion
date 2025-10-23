@@ -1,0 +1,133 @@
+.stock-charts {
+  padding: 4rem 2rem;
+  background-color: var(--card-bg);
+}
+
+.stock-charts .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  color: red;
+}
+
+.stock-charts h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  color: var(--header-bg);
+}
+
+.chart-controls {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.control-group label {
+  font-weight: 600;
+  color: var(--header-bg);
+}
+
+.control-group select {
+  padding: 0.7rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.chart-container {
+  position: relative;
+  height: 400px;
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+}
+
+.chart-bar {
+  background-color: var(--accent-color);
+  margin: 0 1px;
+  transition: height 0.3s;
+  cursor: pointer;
+}
+
+.chart-bar:hover {
+  background-color: var(--hover-color);
+}
+
+.chart-labels {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 3rem);
+  bottom: 0;
+  left: 1.5rem;
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.dark-mode .chart-labels {
+  color: #ccc;
+}
+
+.chart-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.current-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--header-bg);
+}
+
+.price-change {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.price-change.up {
+  color: #4caf50;
+}
+
+.price-change.down {
+  color: #f44336;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stock-charts {
+    padding: 3rem 1rem;
+  }
+  
+  .chart-controls {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .chart-container {
+    height: 300px;
+  }
+}
